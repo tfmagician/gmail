@@ -9,23 +9,23 @@ Usage
 
 First install modules required (I'm using Ubuntu 10.04 TLS).
 
-    apt-get install -y libyaml-0-2 python-setuptools
-    easy_install PyYAML
+    | apt-get install -y libyaml-0-2 python-setuptools
+    | easy_install PyYAML
 
 Second clone script on /etc, /usr/lib or somewhere you like.
 
-    cd /path/to/dir
-    git clone git://github.com/tfmagician/gmail.git
+    | cd /path/to/dir
+    | git clone git://github.com/tfmagician/gmail.git
 
 Third setup a configuration file to your account.
 
-    cd gmail/
-    cp config.yaml.example config.yaml
-    vi config.yaml
+    | cd gmail/
+    | cp config.yaml.example config.yaml
+    | vi config.yaml
 
 Last you can send an email using this script.
 
-    ./gmail.py --subject 'Hello world' --text --body 'Read me.' --config ./config.yaml wonder_land@sample.com
+    | ./gmail.py --subject 'Hello world' --text --body 'Read me.' --config ./config.yaml wonder_land@sample.com
 
 You will get an email from your server.
 
